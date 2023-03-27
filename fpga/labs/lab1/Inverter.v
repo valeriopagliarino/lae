@@ -9,7 +9,7 @@
     - INDENTATION: ALWAYS DONE WITH 4 TABS!
 */
 
-//This construct is used for simulation
+//This construct is used for simulation (time unit / time resolution)
 `timescale 1ps/1ps
 
 /*
@@ -146,4 +146,19 @@ endmodule
   and inverting the logic state of each bit of the bus
   ~myBus        (~ is the bit-wise NOT)
 
+*/
+
+//COMPILATION INSTRUCTIONS IN NON-PROJECT MODE
+/*
+  xvlog Inverter.v
+
+  Typical NON-Project mode simple flow:
+
+    xvlog source1.v source2.v source3.v
+
+  Now the compiled sources are added to the local library:
+  a folder named xsim.dir is created, containing binary *.sdb files.
+
+  Now, the equivalent of the compilation linking is executed, here it
+  is called the 'design elaboration' and the proper tool is xelab
 */
