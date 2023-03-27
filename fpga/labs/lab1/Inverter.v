@@ -133,3 +133,17 @@ endmodule
   assign Z = {X,Y};
 
 */
+
+//LOGIC INVERSION
+/*
+  Let's consider a 5-bit bus 
+  reg [4:0] myBus;
+  Containing [1,0,1,0,1]
+
+  There is a difference between the LOGICAL operation,
+  it means asking if the number of the bus is equal to, for example, 6
+  myBus != 6    (! is the logical NOT)
+  and inverting the logic state of each bit of the bus
+  ~myBus        (~ is the bit-wise NOT)
+
+*/
